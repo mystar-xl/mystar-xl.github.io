@@ -38,6 +38,20 @@ button{font:inherit}
   .top-nav{gap:15px}.profile-hero{grid-template-columns:1fr 280px;gap:5vw}.channel-strip{grid-template-columns:repeat(2,1fr)}.channel-strip a:nth-child(2){border-right:0}.channel-strip a:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .featured-grid{grid-template-columns:1fr}.feature-side{grid-template-columns:1fr 1fr;grid-template-rows:auto}.topic-section,.media-feature{grid-template-columns:1fr;gap:55px}.topic-section.reverse .topic-intro,.topic-section.reverse .topic-links{order:initial}.media-image img{max-height:620px}.about-hero{grid-template-columns:1fr 230px}
 }
+
+/* Chapter 23 illustrations */
+.chapter-figure{margin:3.4em -7% 3.7em;text-align:center}
+.chapter-figure img{display:block;width:100%;height:auto;border-radius:8px;box-shadow:0 18px 48px rgba(29,36,31,.13);background:var(--line)}
+.chapter-figure-portrait{max-width:610px;margin-left:auto;margin-right:auto}
+.chapter-figure-square{max-width:720px}
+.chapter-figure figcaption{margin:16px auto 0;padding:0 20px;color:var(--muted);font-family:system-ui,-apple-system,'PingFang SC',sans-serif;font-size:12px;line-height:1.8;letter-spacing:.06em}
+[data-theme="dark"] .chapter-figure img{box-shadow:0 20px 55px rgba(0,0,0,.32)}
+
+@media(max-width:700px){
+  .chapter-figure,.chapter-figure-portrait,.chapter-figure-square{margin:2.7em -8px 3em;max-width:none}
+  .chapter-figure img{border-radius:5px}
+  .chapter-figure figcaption{padding:0 10px;font-size:11px}
+}
 @media(max-width:700px){
   .site-header{height:auto;min-height:62px;align-items:flex-start;padding:14px 20px}.brand{padding-top:5px}.top-nav{max-width:calc(100vw - 135px);overflow-x:auto;padding-bottom:4px;gap:18px}.top-nav .icon-button{flex:0 0 34px}.portal-main,.collection-main,.about-main{padding:0 20px}
   .profile-hero{min-height:0;padding:70px 5px 65px;grid-template-columns:1fr}.profile-copy h1{font-size:46px}.profile-visual{max-width:310px;justify-self:center;margin-top:30px}.lead{font-size:15px}.channel-strip{grid-template-columns:1fr 1fr}.channel-strip a{padding:23px 15px;grid-template-columns:28px 1fr}.channel-strip small{display:none}
